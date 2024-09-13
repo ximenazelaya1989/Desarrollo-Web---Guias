@@ -1,0 +1,91 @@
+body{
+    padding: 90px;
+    margin: 0;
+    background-color:#e6e6e6;
+    
+}
+
+.main-title{
+    font-size: 8em;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #d7c271;
+}
+
+.gossip-image-intro{
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.gossip-image{
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.intro-parrafo{
+    font-size: 1.4em;
+    text-align: justify;
+    
+}
+
+.personajes{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.4em;
+}
+
+.subtitulo{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.personaje{
+    margin-top: 60px;
+    font-size: 2em;
+}
+
+.moda-parrafo{
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.temporadas-parrafo{
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+.season-image{
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 20px solid black;
+    
+}
+
+.temporada{
+    margin-top: 60px;
+    font-size: 2em;
+}
+
+.main-character{
+    font-style: italic;
+    font-size: 1.8em;
+}
+

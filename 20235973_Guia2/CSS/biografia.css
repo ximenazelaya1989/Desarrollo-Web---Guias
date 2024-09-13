@@ -1,0 +1,181 @@
+body{
+    font-size: 20px;
+    margin: 40 px 20px;
+    background-image:url(../img/326cc6dd4ab80abfedd244950b466df0.jpg);
+    background-attachment: fixed;
+    color: #36293d;
+    font-family: "EB Garamond", serif;
+    width: 100%;
+}
+
+div.main-title{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 38px;
+    margin-bottom: 50px;
+    background-color: #9787a2;
+    border: 3px white solid;
+    padding: 30px;
+    box-sizing: border-box; 
+    border-radius: 90px;
+    height: auto;
+    box-shadow: 10px 10px 5px rgb(173, 173, 173);
+    text-align: center;
+    justify-content: center;
+}
+
+.encabezado > h1{
+    font-size: 6rem;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+}
+
+.encabezado h2{
+    font-size: 2rem;
+    color: #42324b;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.encabezado > h3{
+    color: #473f5c;
+    margin: 10px 0px;
+}
+
+div.social-media{
+    margin: 0 auto;
+    width: 90%;
+}
+
+nav span a{
+    background-color: #9787a2;
+    border: 1px white solid;
+    color: #473f5c;
+    font-size: 1.2rem;
+    float: none;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+nav span a:hover{
+    background-color: #b9b7d0;
+}
+
+div.introduction{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.introduction .contenedor-img{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+.bio-image{
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 10px;
+}
+
+.introduction{
+    width: 80%;
+    background-color:#e1d0cc;
+    padding: 25px 30px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    border-radius: 50px;
+    box-shadow: 10px -10px 5px #9787a2;
+}
+
+div.favorite-singer .contenedor-img{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+.fav-singer-img{
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+.favorite-singer h3.subtitle + p{
+    width: 90%;
+    background-color: #e1d0cc;
+    padding: 25px 30px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    border-radius: 50px;
+    justify-content: center;
+    box-shadow: 10px -10px 5px #9787a2;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+div.favorite-singer h3.subtitle{
+    margin: 20 px;
+    text-align: center;
+}
+
+.subtitle{
+    margin: 15px;
+    font-size: 50px;
+}
+
+.hobbies-img{
+    width: 90%;
+    max-width:350px;
+    height: auto;
+    margin: 10px;
+    
+}
+
+div.hobbies{
+    width: 90%;
+    background-color: #e1d0cc;
+    padding: 25px 30px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    box-shadow: 10px -10px 5px #9787a2;
+    margin-bottom: 90px;
+
+}
+
+div.hobbies .contenedor-img{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+footer{
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #9787a2;
+    color: #36293d;
+    left: 0;
+    
+}
+
+footer p{
+    text-align: center;
+    
+}
+
+body div p:first-letter{
+    color: #28284f;
+    font-size: 2rem;
+}

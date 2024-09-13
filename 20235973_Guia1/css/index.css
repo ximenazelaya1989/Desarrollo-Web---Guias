@@ -1,0 +1,14 @@
+body{
+    background-color: #fee3fc;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.imagen{
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
