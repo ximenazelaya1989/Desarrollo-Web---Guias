@@ -1,12 +1,20 @@
+/* Estilos generales */
 body{
     width: 90%;
-    background-color: #fee3fc;
-    margin: 0px 30px;
+    background-color: #dbb6d8;
+    margin: 0 auto;
     padding: 20px;
     font-size: 1.2em;
+    font-family: "EB Garamond", serif;
+    padding-bottom: 90px;
 }
 
-.imagen{
+h2, h3, a {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.imagen {
     width: 80%;
     max-width: 400px;
     height: auto;
@@ -14,6 +22,173 @@ body{
     margin: 0 auto;
 }
 
-h1{
+div.header {
     font-size: 60px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #916f8f;
+    width: 80%;
+    min-width: 650px;
+    max-width: 960px;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: white;
+}
+
+.biografia {
+    width: 90%;
+    min-width: 650px;
+    max-width: 960px;
+    background-color: #fee3fc;
+    padding: 25px 30px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    border-radius: 50px;
+    box-shadow: 10px -10px 5px #9787a2;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-content: center; 
+    padding: 50px;
+    position: relative;
+}
+
+.materia, .ejercicios, .retroalimentacion, .aprendizaje, .foda {
+    width: 90%;
+    min-width: 650px;
+    max-width: 960px;
+    background-color: #fee3fc;
+    padding: 25px 30px;
+    margin: 0 auto;
+    border-radius: 50px;
+    box-shadow: 10px -10px 5px #9787a2;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding: 50px;
+    position: relative;
+    margin-top: 90px;
+}
+
+p {
+    text-align: justify;
+    font-size: 1em;
+}
+
+div.descripcion_bio {
+    width: 55%;
+    margin-right: 30px;
+}
+
+img {
+    width: 45%;
+}
+
+.biografia .subtitle {
+    display: block;
+    clear: both;
+}
+
+/* Media queries para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    body {
+        font-size: 1em;
+        margin: 0 auto;
+        padding: 0;
+        width: 80%;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .biografia, .materia, .ejercicios, .foda, .retroalimentacion, .aprendizaje {
+        width: 80%; 
+        margin: 0 auto; 
+        padding: 20px;
+        margin-top: 90px;
+        
+        text-align: left;
+        align-items: flex-start; 
+        box-sizing: border-box;
+
+    }
+
+    .descripcion_bio {
+        width: 90%;
+    }
+
+    img {
+        max-width: 100%; 
+        height: auto;
+        margin: 0 auto; 
+        display: block;
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 1.1em;
+        width: 100%;
+        text-align: justify;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .biografia {
+        flex-direction: column;
+        width: 80%;
+        align-items: flex-start; 
+    }
+
+    .biografia .descripcion_bio {
+        width: 100%;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .materia, .ejercicios, .foda, .retroalimentacion, .aprendizaje {
+        margin-top: 90px;
+    }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 769px) {
+    body {
+        font-size: 1.2em;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .biografia {
+        flex-direction: row;
+        align-items: flex-start; 
+    }
+
+    .descripcion_bio {
+        width: 55%;
+    }
+
+    img {
+        width: 45%;
+    }
+
+    .materia, .ejercicios, .foda, .retroalimentacion, .aprendizaje {
+        padding: 40px;
+    }
 }
