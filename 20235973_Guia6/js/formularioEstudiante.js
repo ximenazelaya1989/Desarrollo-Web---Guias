@@ -42,7 +42,7 @@ function validarFormulario() {
     }
 
     if (!duiRegex.test(dui)) {
-        alert("DUI inválido. Debe contener 8 números. Formato: ########-#.");
+        alert("DUI inválido. Debe contener 9 números. Formato: ########-#.");
         duiInput.focus();
         return;
     }
