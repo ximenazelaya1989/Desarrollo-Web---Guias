@@ -9,9 +9,9 @@ const edadInput = document.getElementById("edad");
 const validarButton = document.getElementById("validarButton");
 
 // Expresiones regulares para cada campo
-const carnetRegex = /^[0-9]{8}$/;
+const carnetRegex = /^[A-Za-z]{2}\d{3}$/;
 const nombreRegex = /^[A-Za-zÁÉÍÓÚÑáéíóúñ\s]+$/;
-const duiRegex = /^[0-9]{8}$/;
+const duiRegex = /^\d{8}-\d{1}$/;
 const nitRegex = /^\d{4}-\d{6}-\d{3}-\d{1}$/;
 const fechaNacimientoRegex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/(19|20)\d{2}$/;
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -30,7 +30,7 @@ function validarFormulario() {
 
     // Validar cada campo
     if (!carnetRegex.test(carnet)) {
-        alert("Carnet inválido. Formato: 8 números (Ej: 20235973).");
+        alert("Carnet inválido. Formato dos letras y tres números. Ejemplo: AB001.");
         carnetInput.focus();
         return;
     }
@@ -42,7 +42,7 @@ function validarFormulario() {
     }
 
     if (!duiRegex.test(dui)) {
-        alert("DUI inválido. Debe contener 8 números, sin guiones. Formato: #########.");
+        alert("DUI inválido. Debe contener 8 números. Formato: ########-#.");
         duiInput.focus();
         return;
     }
