@@ -24,18 +24,18 @@ const boton = document.getElementById("idBtnCalcular");
 
 //Definiendo una funcion anonima para calcular el factorial de un numero
 function calcularFactorial(numero) {
-    return numero <2 ? 1 : numero * calcularFactorial(numero-1);
+    return numero == 1 ? 1 : numero * calcularFactorial(numero-1);
 }
 
 //Definamos una funcion de tipo flecha para imprimir el resultado
-const imprimir = (numero, resultado) =>{
+const imprimir = (numero, resultado) => {
     const contenedor = document.getElementById("idDivResultado");
     contenedor.innerHTML = `El factorial de ${numero}! es ${resultado}`;
 };
 
 //Definiendo una funcion tradicional
 function calcular() {
-    let numero = document.getElementById("idTxtNumero");
+    let numero = document.getElementById("idTxtNumero").value;
     if (numero != "") {
         //Llamamos a la funcion anonima para que calcule el factorial
         let resultado = calcularFactorial(numero);
@@ -45,4 +45,7 @@ function calcular() {
         alert("Debe ingresarun numero valido")
     }
 
-}
+};
+
+//DEfiniendo el evento click para el boton
+boton.addEventListener("click", calcular);

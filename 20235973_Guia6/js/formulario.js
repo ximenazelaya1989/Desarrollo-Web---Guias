@@ -50,7 +50,12 @@ const addPaciente = function () {
     let nombre = inputNombre.value;
     let apellido = inputApellido.value;
     let fechaNacimiento = inputFechaNacimiento.value;
-    let sexo =  inputRdMasculino.checked == true ? "Hombre" : inputRdFemenino.checked == true ? "Mujer" :  "";
+    let sexo =  
+    inputRdMasculino.checked == true 
+    ? "Hombre" 
+    : inputRdFemenino.checked == true 
+    ? "Mujer" 
+    : "";
     let pais = cmbPais.value;
     let labelPais = cmbPais.options[cmbPais.selectedIndex].text;
     let direccion = inputDireccion.value;
@@ -71,8 +76,7 @@ const addPaciente = function () {
                 sexo,
                 labelPais,
                 direccion)
-            
-
+        
         );
 
         //Asignando un mensaje a nuestra notificacion
@@ -184,7 +188,7 @@ buttonMostrarPaciente.onclick = () => {
 
 buttonAgregarPais.onclick = () => {
     addPais();
-}
+};
 
 //Se agrega el focus en el campo nombre pais del modal
 idModal.addEventListener("shown.bs.modal", () => {
